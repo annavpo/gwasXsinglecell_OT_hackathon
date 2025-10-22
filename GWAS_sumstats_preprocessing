@@ -18,3 +18,4 @@ python /CELLECT/ldsc/mtag_munge.py --sumstats GWAS_summary_eczema/GCST90027161_f
 
 This will give you sumstats.gz that can be used for the next steps. 
 
+Most GWAS analyses use GRCh37, whereas we have focused on GRCh38. To convert summary stats, we have used CrossMap here. Check CrossMap file.
