@@ -1,0 +1,20 @@
+Input for calculating GWAS Beta values:
+```
+MarkerName	CHR	POS	A1	A2	EAF	Beta	SE	Pval
+rs13090388	3	49391082	C	T	0.6905	-0.02852	0.00184	4.29e-54
+rs7630869	3	49522543	C	T	0.6922	-0.02848	0.00184	4.61e-54
+rs7623659	3	49414791	T	C	0.3095	0.02847	0.00184	4.75e-54
+rs11922013	3	49458355	G	C	0.6905	-0.02844	0.00184	5.94e-54
+```
+(The above info is from GWAS_EA_excl23andMe.txt)
+As we have focused on Psoriasis and Eczema, the accession code below is from a GWAS study related to Eczema.
+
+w_hm3.snplist -> is in CELLECT-LDSC
+
+Next, 
+```
+python /CELLECT/ldsc/mtag_munge.py --sumstats GWAS_summary_eczema/GCST90027161_filtered.tsv --merge-alleles w_hm3.snplist --n-value 444887 --keep-pval --p Pval --out output
+```
+
+This will give you sumstats.gz that can be used for the next steps. 
+
