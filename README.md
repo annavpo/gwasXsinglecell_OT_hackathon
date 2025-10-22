@@ -29,11 +29,12 @@ This project is meant to bridge this gap by integrating **GWAS summary statistic
 ## Approach  
 
 ### 1️) Data Collection  
-- Retrieve GWAS summary statistics for psoriasis and atopic dermatitis from the **[GWAS Catalog](https://www.ebi.ac.uk/gwas/)**.  
+- Retrieve GWAS summary statistics for psoriasis and atopic dermatitis from the **[GWAS Catalog](https://www.ebi.ac.uk/gwas/)**.
 - Obtain **credible sets** from the **[Open Targets Platform](https://platform.opentargets.org/)**.  
 - Gather **public scRNA-seq** datasets from healthy and diseased skin.  
 
 ### 2️) Integration & Analysis  
+- Calculate Beta values using *mtag_munge.py* in *CELLECT-LDSC*. For ease, have an input file that looks like **[GWAS input]( )** 
 - Estimate cell-type expression specificity score using **CELLEX**.  
 - Perform genetic prioritisation using **CELLECT-MAGMA** or **CELLECT-LDSC**.
 
