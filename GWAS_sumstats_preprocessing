@@ -11,11 +11,16 @@ As we have focused on Psoriasis and Eczema, the accession code below is from a G
 
 w_hm3.snplist -> is in CELLECT-LDSC
 
-Next, 
+Next, for Eczema, we've used GWAS study GCST90027161:
 ```
-python /CELLECT/ldsc/mtag_munge.py --sumstats GWAS_summary_eczema/GCST90027161_filtered.tsv --merge-alleles w_hm3.snplist --n-value 444887 --keep-pval --p Pval --out output
+python CELLECT/ldsc/mtag_munge.py --sumstats GWAS_summary_eczema/GCST90027161_filtered.tsv --merge-alleles w_hm3.snplist --n-value 444887 --keep-pval --p Pval --out GWAS_summary_eczema/output
 ```
+This will provide you with sumstats.gz, which can be used for the next steps. 
 
-This will give you sumstats.gz that can be used for the next steps. 
+Most GWAS analyses use GRCh37, whereas we have focused on GRCh38. To convert summary stats, we have used CrossMap here. Check Crossmap and lifted.py file.
 
-Most GWAS analyses use GRCh37, whereas we have focused on GRCh38. To convert summary stats, we have used CrossMap here. Check CrossMap file.
+For Psoriasis, we've used the GWAS study GCST90558096 and converted the summary stats from GRCh37 to 38 using Crossmap. 
+
+```
+python CELLECT/ldsc/mtag_munge.py --sumstats GWAS_summary_psoriasis/summary_stats_GCST90558096_hg38.txt --merge-alleles w_hm3.snplist --n-value 444887 --keep-pval --p Pval --out GWAS_summary_psoriasis/output
+```
