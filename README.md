@@ -53,7 +53,7 @@ This project is meant to bridge this gap by integrating **GWAS summary statistic
 | **Single-cell analysis** | 🧫 [Scanpy](https://scanpy.readthedocs.io/) |
 | **GWAS–single-cell integration** | [CELLECT](https://github.com/perslab/CELLECT), [CELLEX](https://github.com/perslab/CELLEX)
 | **Data sources** | 🌐 [GWAS Catalog](https://www.ebi.ac.uk/gwas/), [Open Targets Platform](https://platform.opentargets.org/), [Public scRNA-seq data from inflammatory skin diseases](https://developmental.cellatlas.io/studies/diseased-skin) |
-| **Language** | 🐍 Python (scanpy, Jupyter, CELLEX, CELLECT) |
+| **Language** | 🐍 Python (scanpy, Jupyter, CELLEX, CELLECT), snakemake |
 | Google Cloud | Vertex AI |
 
 ---

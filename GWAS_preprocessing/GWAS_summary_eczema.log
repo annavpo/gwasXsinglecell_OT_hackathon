@@ -1,0 +1,52 @@
+2025/10/22 08:42:48 AM *********************************************************************
+* LD Score Regression (LDSC)
+* Version 1.0.0
+* (C) 2014-2015 Brendan Bulik-Sullivan and Hilary Finucane
+* Broad Institute of MIT and Harvard / MIT Department of Mathematics
+* GNU General Public License v3
+*********************************************************************
+Call: 
+./munge_sumstats.py \
+--out /home/jupyter/shared_resources_307/GWAS_summary_eczema \
+--merge-alleles /home/jupyter/shared_resources_307/GWAS_summary1/w_hm3.snplist \
+--n-value 444887 \
+--sumstats /home/jupyter/shared_resources_307/GWAS_summary_eczema/GCST90027161_filtered.tsv \
+--p Pval 
+
+2025/10/22 08:42:48 AM Interpreting column names as follows:
+2025/10/22 08:42:48 AM MarkerName:	Variant ID (e.g., rs number)
+EAF:	Allele frequency
+A1:	a1, interpreted as ref allele for signed sumstat.
+Pval:	p-Value
+Beta:	[linear/logistic] regression coefficient (0 --> no effect; above 0 --> A1 is trait/risk increasing)
+A2:	a2, interpreted as non-ref allele for signed sumstat.
+SE:	Standard errors of BETA coefficients
+
+2025/10/22 08:42:48 AM Reading list of SNPs for allele merge from /home/jupyter/shared_resources_307/GWAS_summary1/w_hm3.snplist
+2025/10/22 08:42:49 AM Read 1217311 SNPs for allele merge.
+2025/10/22 08:43:11 AM Reading sumstats from /home/jupyter/shared_resources_307/GWAS_summary_eczema/GCST90027161_filtered.tsv into memory 5000000 SNPs at a time.
+2025/10/22 08:44:25 AM Read 16350896 SNPs from --sumstats file.
+Removed 15050183 SNPs not in --merge-alleles.
+Removed 107878 SNPs with missing values.
+Removed 0 SNPs with INFO <= 0.9.
+Removed 22234 SNPs with MAF <= 0.01.
+Removed 0 SNPs with SE <0 or NaN values.
+Removed 0 SNPs with out-of-bounds p-values.
+Removed 235 variants that were not SNPs or were strand-ambiguous.
+1170366 SNPs remain.
+2025/10/22 08:44:25 AM Adding uniform sample size 444887 to summary statistics.
+2025/10/22 08:44:26 AM Removed 307 SNPs with duplicated rs numbers (1170059 SNPs remain).
+2025/10/22 08:44:26 AM Removed 0 SNPs with N < 296591.333333 (1170059 SNPs remain).
+2025/10/22 08:44:32 AM Median value of Beta was -0.0001, which seems sensible.
+2025/10/22 08:44:34 AM Removed 147 SNPs whose alleles did not match --merge-alleles (1169912 SNPs remain).
+2025/10/22 08:44:35 AM Writing summary statistics for 1169912 SNPs (1169912 with nonmissing N) to /home/jupyter/shared_resources_307/GWAS_summary_eczema.sumstats.gz.
+2025/10/22 08:44:47 AM Dropping snps with null values
+2025/10/22 08:44:47 AM 
+Metadata:
+2025/10/22 08:44:48 AM Mean chi^2 = 1.122
+2025/10/22 08:44:48 AM Lambda GC = 1.08
+2025/10/22 08:44:48 AM Max chi^2 = 86.054
+2025/10/22 08:44:48 AM 352 Genome-wide significant SNPs (some may have been removed by filtering).
+2025/10/22 08:44:48 AM 
+Conversion finished at Wed Oct 22 08:44:48 2025
+2025/10/22 08:44:48 AM Total time elapsed: 1.0m:59.29s
