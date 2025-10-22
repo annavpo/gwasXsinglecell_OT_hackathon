@@ -6,7 +6,7 @@
 ---
 
 
-![Workflow](Workflow.png)
+![workflow](workflow.png)
 
 
 ## Overview  
