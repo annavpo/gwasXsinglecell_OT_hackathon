@@ -38,11 +38,11 @@ This project is meant to bridge this gap by integrating **GWAS summary statistic
 - Perform genetic prioritisation using **CELLECT-MAGMA** or **CELLECT-LDSC**.
 
 
-### 3️⃣ Output  
+### 3️) Output  
 - List **disease-relevant/etiologic cell types** per condition.
 - Cell-type specificity scores for prioritised targets
 - Visualisation and summary reports
-- 
+  
 ---
 
 ## Resources
@@ -50,7 +50,7 @@ This project is meant to bridge this gap by integrating **GWAS summary statistic
 | Category | Tools / Libraries |
 |-----------|-------------------|
 | **Single-cell analysis** | 🧫 [Scanpy](https://scanpy.readthedocs.io/) |
-| **GWAS–single-cell integration** | 🧠 [MAGMA](https://ctg.cncr.nl/software/magma), [CELLECT](https://github.com/perslab/CELLECT), [CELLEX](https://github.com/perslab/CELLEX), [LDSC](https://github.com/bulik/ldsc) |
+| **GWAS–single-cell integration** | [CELLECT](https://github.com/perslab/CELLECT), [CELLEX](https://github.com/perslab/CELLEX)
 | **Data sources** | 🌐 [GWAS Catalog](https://www.ebi.ac.uk/gwas/), [Open Targets Platform](https://platform.opentargets.org/), [Public scRNA-seq data from inflammatory skin diseases](https://developmental.cellatlas.io/studies/diseased-skin) |
 | **Language** | 🐍 Python (scanpy, Jupyter, CELLEX, CELLECT) |
 | Google Cloud | Vertex AI |
@@ -59,15 +59,8 @@ This project is meant to bridge this gap by integrating **GWAS summary statistic
 
 ## Outcome
 
-✅ Ranked list of **pathogenic cell types** for psoriasis and eczema.  
-✅ **Cell-type specificity scores** for target prioritisation.  
-✅ A prototype **Open Targets cell type specificity evidence feature** integrating these results.  
-
----
-
-## 💡 Impact  
-
-By linking **genetic risk** to **cellular function**, gwasXsc helps uncover *where* in the skin genetic variants exert their effects — guiding the discovery of **cell-type-specific therapeutic targets** for inflammatory skin diseases.
-
+- Ranked list of **pathogenic cell types** for psoriasis and eczema.  
+- **Cell-type specificity scores** for target prioritisation.  
+- A prototype **Open Targets cell type specificity evidence feature** integrating these results.  
 
 
