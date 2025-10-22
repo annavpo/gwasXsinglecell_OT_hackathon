@@ -34,7 +34,7 @@ This project is meant to bridge this gap by integrating **GWAS summary statistic
 - Gather **public scRNA-seq** datasets from healthy and diseased skin.  
 
 ### 2️) Integration & Analysis  
-- Calculate Beta values using *mtag_munge.py* in *CELLECT-LDSC*. For ease, have an input file that looks like **[GWAS input]( )** 
+- Calculate Beta values using *mtag_munge.py* in *CELLECT-LDSC*. For ease, have an input file that looks like **[GWAS input](https://github.com/annavpo/gwasXsinglecell_OT_hackathon/blob/main/GWAS_sumstats_preprocessing)** 
 - Estimate cell-type expression specificity score using **CELLEX**.  
 - Perform genetic prioritisation using **CELLECT-MAGMA** or **CELLECT-LDSC**.
 
