@@ -5,6 +5,10 @@
 
 ---
 
+
+![Workflow](workflow.png)
+
+
 ## Overview  
 Genome-wide association studies (GWAS) have identified hundreds of genetic loci associated with **inflammatory skin diseases** such as **psoriasis** and **atopic dermatitis**, but the **pathogenic cell types** underlying these signals remain largely unknown.
 
