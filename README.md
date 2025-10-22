@@ -6,7 +6,7 @@
 ---
 
 
-![Workflow](workflow.png)
+![Workflow](Screenshot 2025-10-22 at 16.02.29.png)
 
 
 ## Overview  
