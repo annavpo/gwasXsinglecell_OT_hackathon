@@ -1,0 +1,7 @@
+name: cellect
+channels:
+  - conda-forge
+dependencies:
+  - snakemake[version='>=5.27.4']
+  - statsmodels
+prefix: /opt/conda/envs/cellect
